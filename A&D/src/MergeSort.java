@@ -17,14 +17,13 @@ public class MergeSort {
         while(i<=mid && j <= right){
             if(A[i] <= A[j]){
                 B[k]=A[i];
-                k++;
                 i++;
             }
             else{
                 B[k]=A[j];
-                k++;
                 j++;
             }
+            k++;
         }
         for( ; i<=mid;i++,k++){
             B[k]=A[i];
